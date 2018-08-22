@@ -41,7 +41,7 @@ def generate_data_extrapolation(arithmetic_type, num_examples, input_range, supp
 
 
 def generate_data_mnist():
-	mnist = np.load('/home/jatin/codes/deeplearning/digits_training/mnist_scaled.npz')
+	mnist = np.load('mnist_scaled.npz')  # mnist_scaled.npz is just the numpy format of mnist data. Much efficient and takes less memory to store
 	X_train = mnist['X_train'][:1000]
 	y_train = mnist['y_train'][:1000]
 	X_test = mnist['X_test'][1000:1100]
